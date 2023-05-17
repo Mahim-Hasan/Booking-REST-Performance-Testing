@@ -1,6 +1,6 @@
 # Booking-REST-Performance-Testing
 
-## How to run this project
+## ***How to run this project***
 - Clone this project
 - Open with JMeter / Command Shell
 - For running in Command Shell follow the steps:
@@ -15,19 +15,19 @@ jmeter -n -t filename.jmx -l report\filename.jtl
 jmeter -g report\filename.jtl -o report\filename.html
 ```
 
-## Technology used:
+## ***Technology used***
 - JMeter
 
-## Prerequisite:
+## ***Prerequisite***
 - Jdk
 - Node Js
 - Html Report Library
 
-## Test case list:
-1. ### Create Booking
+## Test case list
+1. ### ***Create Booking***
 	> In this section we created dataset using the dynamic random variables.
 
-2. ### Get Booking
+2. ### ***Get Booking***
 	> In this section we tested wether we can get the details of the particular searched id which we got in the create booking section's response and also validated the following field values:
  	1. > First Name
  	2. > Last Name
@@ -37,32 +37,32 @@ jmeter -g report\filename.jtl -o report\filename.html
  	6. > Check Out
  	7. > Additional Needs
 
-3. ### Create Token
+3. ### ***Create Token***
   > In this section we generated a token that'll be needed to update the booking, partially update the booking and delete the booking.
   
-4. ### Update Booking
+4. ### ***Update Booking***
 	> In this section we updated the following field values:
  	1. > First Name
  	2. > Last Name
  	3. > Total Price
  	4. > Additional Needs
  	
-5. ### Get Updated Booking
+5. ### ***Get Updated Booking***
 	> In this section we tested wether the updated field values successfully added ot not and validated the following field values:
 	1. > First Name
  	2. > Last Name
  	3. > Total Price
  	4. > Additional Needs
 
-6. ### Partial Update Booking
+6. ### ***Partial Update Booking***
 	> In this section we just modified the following two field values:
 	1. > First Name
  	2. > Last Name
 
-7. ### Delete Booking
+7. ### ***Delete Booking***
 	> In this section we deleted the information of the id that we called and successfully got the result.
 
-## Report Summary:
+## ***Report Summary***
 For, 1 Concurrent Request with 1 Ramp-up Period and 1 Loop Count; Avg TPS for Total Samples is ~ 0.117 and Total Concurrent API requested: 7.
 	![t1-tps](https://github.com/Mahim-Hasan/Booking-REST-Performance-Testing/assets/77658882/f9136dd0-3169-4a59-9b1b-91c92a862739)
 	![t1-tbl](https://github.com/Mahim-Hasan/Booking-REST-Performance-Testing/assets/77658882/c5648f31-6465-4895-b59f-3fb84433cc87)
@@ -109,5 +109,5 @@ For, 600 Concurrent Requests with 10 Ramp-up Period and 10 Loop Counts; Avg TPS 
 ![t6000-grp](https://github.com/Mahim-Hasan/Booking-REST-Performance-Testing/assets/77658882/682d3bad-ef6d-41fe-94b5-e00f53edd1aa)
 
 
-## Summary:
+## ***Summary***
 > Server can handle almost concurrent 37000 API calls with almost zero (0)% error rate.
